@@ -17,8 +17,13 @@ public class KeyChecker : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            //listChars.Add(Input.inputString);
-            Debug.Log(Input.inputString);
+            string inputKey = Input.inputString;
+            if(inputKey.Length==1){
+                listChars.Add(Input.inputString);
+                Debug.Log("One letter saved: " + Input.inputString);
+            } else{
+                Debug.Log("More than one letter inputted, not saved");
+            }
         }
     }
 
