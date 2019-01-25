@@ -7,12 +7,11 @@ public class InputVisualizer : MonoBehaviour
 {
     Text inputArray;
     public Font m_Font;
-    private List<char> listChars;
+    private List<string> listChars;
 
 
     void Update()
     {
-        listChars = getListChars();
-        Debug.Log(listChars.ToString());
+        
     }
 }

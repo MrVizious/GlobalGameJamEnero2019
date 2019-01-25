@@ -7,18 +7,22 @@ using UnityEngine;
 public class KeyChecker : MonoBehaviour
 {
     [SerializeField]
-    private List<char> listChars;
+    private List<string> listChars;
+
+    public void Start(){
+        listChars = new List<string>();
+    }
 
     public void Update()
     {
         if (Input.anyKeyDown)
         {
-            listChars.Add((char)Input.anyKeyDown);
+            //listChars.Add(Input.inputString);
             Debug.Log(Input.inputString);
         }
     }
 
-    public List<char> getListChars()
+    public List<string> getListChars()
     {
         return this.listChars;
     }
