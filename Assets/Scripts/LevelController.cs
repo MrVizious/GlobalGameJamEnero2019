@@ -11,5 +11,16 @@ public class LevelController : MonoBehaviour
         public int y;
     }
 
-    public List<TrackedGameObject> gameObjects;
+    public List<TrackedGameObject> trackedGameObjects;
+
+    void Start(){
+        InstantiateObjects();
+    }
+
+
+    private void InstantiateObjects(){
+        foreach(TrackedGameObject o in trackedGameObjects){
+            Instantiate(o.trackedGameObject, new Vector3(o.x, o.y, 0), Quaternion.identity);
+        }
+    }
 }
