@@ -7,11 +7,19 @@ using UnityEngine;
 public class KeyChecker : MonoBehaviour
 {
     [SerializeField]
-    private char c;
-    
-    public void Update(){
-            if(Input.anyKeyDown){
-                Debug.Log(Input.inputString);
-            }
+    private List<char> listChars;
+
+    public void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            listChars.Add((char)Input.anyKeyDown);
+            Debug.Log(Input.inputString);
+        }
+    }
+
+    public List<char> getListChars()
+    {
+        return this.listChars;
     }
 }
