@@ -12,11 +12,13 @@ public class InputVisualizer : MonoBehaviour
     private List<GameObject> letterHolders;
     private List<GameObject> letters;
     public float Y_POSITION_LEVEL;
+    private Sprite[] sprites;
 
     public void Start()
     {
         letterHolders = new List<GameObject>();
         letters = new List<GameObject>();
+        sprites = Resources.LoadAll<Sprite>("SpriteLetters");
     }
 
 
@@ -29,9 +31,12 @@ public class InputVisualizer : MonoBehaviour
 
     public void AddLetter(string s){
         if(!(letters.Count >= letterHolders.Count)){
-            //TODO Método temporal, usa un prefab en lugar de una letra (sprite)
             letters.Add(Instantiate(letterPrefab, letterHolders[letters.Count].transform));
             Debug.Log("La letra escrita es: " + s);
+            letters[letters.Count-1].GetComponent<LetterSpriteManager>().setSprites(sprites);
+            letters[letters.Count-1].GetComponent<LetterSpriteManager>().ChangeSprite(s);
+            Debug.Log("Creada la letra: " + letters[letters.Count-1]);
+
         } else {
             Debug.Log("Se ha pedido crear más letras que espacios permitidos");
         }

@@ -9,15 +9,24 @@ public class ObstacleData : MonoBehaviour
                                                {1,0,0,0,1},
                                                {1,0,0,0,1},
                                                {1,0,0,0,1},
+                                               {1,0,0,0,1},
                                                {0,1,0,1,0}};
-    private int[,] salonData = new int [,]{{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+    private int[,] salonData = new int [,]{{0,1,1,1,1,1,1,1,1,1,1,1,1,1,0},
                                            {1,0,0,0,0,0,0,1,0,0,0,0,0,0,1},
                                            {1,0,0,0,0,0,0,1,0,0,0,0,0,0,1},
                                            {1,0,0,0,0,0,0,1,0,0,0,0,0,0,1},
                                            {1,0,0,0,0,0,0,1,0,0,0,0,0,0,1},
                                            {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
                                            {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                                           {1,1,1,1,0,1,1,0,1,1,1,1,1,1,1}};
+                                           {0,1,1,1,0,1,1,0,1,1,1,1,1,1,0}};
+    private int[,] garajeData = new int [,]{{0,1,0,1,1,1,1,0},
+                                            {1,0,0,0,0,0,0,1},
+                                            {1,0,0,0,0,0,0,1},
+                                            {1,0,0,0,0,0,0,1},
+                                            {1,0,0,0,0,0,0,1},
+                                            {1,0,0,0,0,0,0,1},
+                                            {1,0,0,0,0,0,0,1},
+                                            {0,1,1,1,1,1,1,0}};
 
 
     public int[,] getObstacleData(string levelName){
@@ -25,6 +34,7 @@ public class ObstacleData : MonoBehaviour
             case "Recibidor": return recibidorData;
             case "Salon":
             case "Cocina": return salonData;
+            case "Garaje": return garajeData;
             default: return null;
         }
     }

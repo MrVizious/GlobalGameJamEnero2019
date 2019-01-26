@@ -23,6 +23,7 @@ public class LevelController : MonoBehaviour
 
     public void AddLetter(string s){
         if(listChars.Count < NUMBER_OF_INPUTS){
+            Debug.Log("Enviando como string el carácter: *" + s +"*");
             inputVisualizer.GetComponent<InputVisualizer>().AddLetter(s);
             listChars.Add(s);
         } else {
