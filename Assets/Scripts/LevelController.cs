@@ -10,10 +10,10 @@ public class LevelController : MonoBehaviour
     public GameObject inputVisualizer;
     private GameObject player;
 
+    private bool inAction;
+
     void Start(){
-
-        //obstacles = new List<int>(new int[] {1,3,5,9,10,14,15,19,20,24,26,28});
-
+        inAction = false;
         listChars = new List<string>();
         CreateLetterHolders();
         player = Instantiate(playerPrefab);
@@ -34,17 +34,23 @@ public class LevelController : MonoBehaviour
 
     //Simplemente empieza la co-rutina de SequentialActions
     public void StartActions(){
-        StartCoroutine(SequentialActions());
+        if(!inAction){
+
+            StartCoroutine(SequentialActions());
+        }
+
     }
 
     //Ejecuta cada acción del script CharacterController y pausa un segundo antes de ejecutar la siguiente
     IEnumerator SequentialActions()
      {
          if(listChars.Count == NUMBER_OF_INPUTS){
+             inAction = true;
              foreach(string s in listChars){
                  player.GetComponent<CharacterAction>().Action(s);
                  yield return new WaitForSeconds(1f);
              }
+             inAction = false;
          }
      }
 }

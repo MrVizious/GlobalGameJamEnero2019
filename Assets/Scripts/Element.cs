@@ -9,4 +9,8 @@ public class Element : MonoBehaviour
     public bool isObstacle(){
         return obstacle;
     }
+
+    public void Action(){
+        Debug.Log("Acción realizada por " + gameObject.name);
+    }
 }

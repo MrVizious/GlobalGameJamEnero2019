@@ -30,6 +30,8 @@ public class CharacterAction : MonoBehaviour
                     Debug.Log("Posición actual del player: " + transform.position.ToString());
                     target = transform.position + new Vector3(1,0,0);
                     break;
+            case " ": Debug.Log("Pausa hecha");
+                    break;
             default: Debug.Log("Letra introducida no corecta!: "+ s);
                     break;
 
