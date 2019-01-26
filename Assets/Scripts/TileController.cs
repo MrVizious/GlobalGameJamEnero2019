@@ -13,7 +13,7 @@ public class TileController : MonoBehaviour
     void Start(){
         FillObstacleMatrix();
         DrawObstacles();
-        FillObstacleMatrixWithElements();        
+        FillObstacleMatrixWithElements();
     }
 
     private void FillObstacleMatrix(){
