@@ -14,3 +14,9 @@ public class Element : MonoBehaviour
         Debug.Log("Acción realizada por " + gameObject.name);
     }
 }
+
+// TODO al entrar por una puerta por ejemplo, pisar a un gato
+
+// TODO Singleton
+// TODO inventario
+// TODO menu de pausa
