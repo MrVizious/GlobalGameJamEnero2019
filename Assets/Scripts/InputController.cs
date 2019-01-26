@@ -10,6 +10,7 @@ public class InputController : MonoBehaviour
 {
 
     public GameObject levelController;
+    public GameObject pauseMenu;
 
     public void Update()
     {
@@ -26,6 +27,7 @@ public class InputController : MonoBehaviour
             levelController.GetComponent<LevelController>().StartActions();
         }
         if(Input.GetKeyDown(KeyCode.Escape)){
+            pauseMenu.GetComponent<PauseMenu>().PauseManager();
             Debug.Log("Pulsado Escape, tocaría meter un menú");
         }
     }
