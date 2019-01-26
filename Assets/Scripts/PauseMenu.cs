@@ -5,8 +5,10 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused;
+    public GameObject pauseMenuUI;
 
     void Start(){
+        pauseMenuUI.SetActive(false);
         GameIsPaused = false;
     }
 
@@ -19,15 +21,23 @@ public class PauseMenu : MonoBehaviour
     }
 
     public void ResumeGame(){
-            //pauseMenuUI.setActive(false);
+            pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
             GameIsPaused = false;
+            Debug.Log("El juego se ha resumido");
     }
 
     public void PauseGame(){
-            //pauseMenuUI.setActive(true);
+            pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             GameIsPaused = true;
+            Debug.Log("El juego se ha pausado");
+    }
+
+    // Application.Quit() solo funcionará si el juego se ha buildeado
+    public void QuitGame(){
+        Debug.Log("Quitting game");
+        Application.Quit();
     }
 
 }
