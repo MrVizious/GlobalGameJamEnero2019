@@ -49,18 +49,18 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    public void StartMovement(){
-        StartCoroutine(SequentialMovement());
+    public void StartActions(){
+        StartCoroutine(SequentialActions());
 
 
     }
 
-    IEnumerator SequentialMovement()
+    IEnumerator SequentialActions()
      {
 
          if(listChars.Count == NUMBER_OF_INPUTS){
              foreach(string s in listChars){
-                 player.GetComponent<CharacterMovement>().Move(s);
+                 player.GetComponent<CharacterMovement>().Action(s);
                  yield return new WaitForSeconds(1f);
              }
          }

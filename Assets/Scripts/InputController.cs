@@ -23,7 +23,7 @@ public class InputController : MonoBehaviour
             }
         }
         if(Input.GetKeyDown(KeyCode.Return)){
-            levelController.GetComponent<LevelController>().StartMovement();
+            levelController.GetComponent<LevelController>().StartActions();
         }
     }
 
