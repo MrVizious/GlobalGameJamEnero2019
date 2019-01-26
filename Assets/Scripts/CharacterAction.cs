@@ -7,7 +7,8 @@ public class CharacterAction : MonoBehaviour
 
     private Vector3 target;
     public float speed;
-    //public GameObject levelController;
+    public GameObject tileController;
+
 
     void Start(){
         target = transform.position;
@@ -16,28 +17,29 @@ public class CharacterAction : MonoBehaviour
     public void Action(string s){
         switch(s){
             case "w":
-                    //if(levelController.GetComponent<LevelController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y+1)){
+                    if(tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y+1)){
                     target = transform.position + new Vector3(0,1,0);
-                    //}
+                    }
                     break;
             case "a":
-                    //if(levelController.GetComponent<LevelController>().CheckPosibleMovement((int)transform.position.x-1, (int)transform.position.y)){
+                    if(tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x-1, (int)transform.position.y)){
                     target = transform.position + new Vector3(-1,0,0);
-                    //}
+                    }
                     break;
             case "s":
-                    //if(levelController.GetComponent<LevelController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y-1)){
+                    if(tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y-1)){
                     target = transform.position + new Vector3(0,-1,0);
-                    //}
+                    }
                     break;
             case "d":
-                    //if(levelController.GetComponent<LevelController>().CheckPosibleMovement((int)transform.position.x+1, (int)transform.position.y)){
+                    if(tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x+1, (int)transform.position.y)){
                     target = transform.position + new Vector3(1,0,0);
-                    //}
+                    }
                     break;
             case " ": Debug.Log("Pausa hecha");
                     break;
-            default: Debug.Log("Letra introducida no corecta!: "+ s);
+            default:
+                    sendActions(s);
                     break;
 
         }
@@ -49,4 +51,10 @@ public class CharacterAction : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target, step);
     }
 
+    private void sendActions(string inputString){
+        List<GameObject> listElementsAround = tileController.GetComponent<TileController>().getElementsAround((int)transform.position.x, (int)transform.position.y);
+        foreach (GameObject o in listElementsAround) {
+            o.GetComponent<Element>().Action(inputString);
+        }
+    }
 }

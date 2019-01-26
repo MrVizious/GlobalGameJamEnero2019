@@ -6,9 +6,8 @@ public class LevelController : MonoBehaviour
 {
     public int NUMBER_OF_INPUTS;
     public List<string> listChars;
-    public GameObject playerPrefab;
     public GameObject inputVisualizer;
-    private GameObject player;
+    public GameObject player;
     public GameObject tileController;
     private bool inAction;
 
@@ -16,7 +15,6 @@ public class LevelController : MonoBehaviour
         inAction = false;
         listChars = new List<string>();
         CreateLetterHolders();
-        player = Instantiate(playerPrefab);
     }
 
     private void CreateLetterHolders(){
@@ -48,9 +46,5 @@ public class LevelController : MonoBehaviour
              }
              inAction = false;
          }
-     }
-
-     public bool CheckPosibleMovement(int x, int y){
-         return tileController.GetComponent<TileController>().CheckPosibleMovement(x, y);
      }
 }

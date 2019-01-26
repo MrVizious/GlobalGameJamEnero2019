@@ -28,7 +28,6 @@ public class InputController : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Escape)){
             pauseMenu.GetComponent<PauseMenu>().PauseManager();
-            Debug.Log("Pulsado Escape, tocaría meter un menú");
         }
     }
 

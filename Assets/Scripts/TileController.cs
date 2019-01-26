@@ -12,8 +12,8 @@ public class TileController : MonoBehaviour
 
     void Start(){
         FillObstacleMatrix();
-        FillObstacleMatrixWithElements();
-        //DrawObstacles();
+        DrawObstacles();
+        FillObstacleMatrixWithElements();        
     }
 
     private void FillObstacleMatrix(){
@@ -39,7 +39,16 @@ public class TileController : MonoBehaviour
         }
     }
 
-
+    public List<GameObject> getElementsAround(int x, int y){
+        List<GameObject> elementsAround = new List<GameObject>();
+        foreach(GameObject o in elements){
+            if((int) o.transform.position.x == x+1 && (int) o.transform.position.y == y) elementsAround.Add(o);
+            else if((int) o.transform.position.x-1 == x && (int) o.transform.position.y == y) elementsAround.Add(o);
+            else if((int) o.transform.position.x == x && (int) o.transform.position.y == y+1) elementsAround.Add(o);
+            else if((int) o.transform.position.x == x && (int) o.transform.position.y == y-1) elementsAround.Add(o);
+        }
+        return elementsAround;
+    }
 
     //TODO checkPossibleAction
 
