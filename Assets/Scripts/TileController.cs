@@ -6,13 +6,13 @@ public class TileController : MonoBehaviour
 {
     public string levelName;
     public List<GameObject> elements;
-    public GameObject prefabObstacle;
+    //public GameObject prefabObstacle;
 
     private int[,] obstacleMatrix;
 
     void Start(){
         FillObstacleMatrix();
-        DrawObstacles();
+        //DrawObstacles();
         FillObstacleMatrixWithElements();
     }
 
@@ -30,22 +30,24 @@ public class TileController : MonoBehaviour
         Debug.Log(s);
         */
     }
+
     private void FillObstacleMatrixWithElements(){
         foreach(GameObject o in elements){
             if(o.GetComponent<Element>().isObstacle()){
-                obstacleMatrix[(int)o.transform.position.y, (int)o.transform.position.x] = 1;
+                obstacleMatrix[(int)Mathf.Round(o.transform.position.y), (int)Mathf.Round(o.transform.position.x)] = 1;
                 Debug.Log("Elemento obstáculo añadido!");
             }
         }
     }
+    
 
     public List<GameObject> getElementsAround(int x, int y){
         List<GameObject> elementsAround = new List<GameObject>();
         foreach(GameObject o in elements){
-            if((int) o.transform.position.x == x+1 && (int) o.transform.position.y == y) elementsAround.Add(o);
-            else if((int) o.transform.position.x-1 == x && (int) o.transform.position.y == y) elementsAround.Add(o);
-            else if((int) o.transform.position.x == x && (int) o.transform.position.y == y+1) elementsAround.Add(o);
-            else if((int) o.transform.position.x == x && (int) o.transform.position.y == y-1) elementsAround.Add(o);
+            if((int) Mathf.Round(o.transform.position.x) == x+1 && (int) Mathf.Round(o.transform.position.y) == y) elementsAround.Add(o);
+            else if((int) Mathf.Round(o.transform.position.x-1) == x && (int) Mathf.Round(o.transform.position.y) == y) elementsAround.Add(o);
+            else if((int) Mathf.Round(o.transform.position.x) == x && (int) Mathf.Round(o.transform.position.y) == y+1) elementsAround.Add(o);
+            else if((int) Mathf.Round(o.transform.position.x) == x && (int) Mathf.Round(o.transform.position.y) == y-1) elementsAround.Add(o);
         }
         return elementsAround;
     }
@@ -57,13 +59,14 @@ public class TileController : MonoBehaviour
     }
 
     //Solo para debugging
+    /*
     private void DrawObstacles(){
         for(int y=0; y<obstacleMatrix.GetLength(0); y++){
             for(int x=0; x<obstacleMatrix.GetLength(1); x++){
                 if(obstacleMatrix[y,x]==1) Instantiate(prefabObstacle, new Vector3(x, y, 0), Quaternion.identity);
             }
         }
-    }
+    }*/
 
 
 }

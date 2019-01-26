@@ -10,6 +10,8 @@ public class LevelController : MonoBehaviour
     public GameObject player;
     public GameObject tileController;
     private bool inAction;
+    public GameObject sceneManager;
+
 
     void Start(){
         inAction = false;
@@ -47,5 +49,9 @@ public class LevelController : MonoBehaviour
              }
              inAction = false;
          }
+     }
+
+     public void ChangeScene(string s){
+         sceneManager.GetComponent<SceneManagerScript>().ChangeScene(s);
      }
 }

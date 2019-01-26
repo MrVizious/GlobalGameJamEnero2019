@@ -29,6 +29,14 @@ public class InputController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             pauseMenu.GetComponent<PauseMenu>().PauseManager();
         }
+
+        if(Input.GetButtonDown("Fire1")){
+            levelController.GetComponent<LevelController>().ChangeScene("Recibidor");
+        }
+        if(Input.GetButtonDown("Fire2")){
+            levelController.GetComponent<LevelController>().ChangeScene("RecibidorNuevo");
+        }
+
     }
 
     private bool ValidKey(string s){
