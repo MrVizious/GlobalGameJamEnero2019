@@ -20,6 +20,7 @@ public class LevelController : MonoBehaviour
     private GameObject player;
 
     void Start(){
+        listChars = new List<string>();
         InstantiateObjects();
         CreateLetterHolders();
 
@@ -31,7 +32,12 @@ public class LevelController : MonoBehaviour
 
     public void AddLetter(string s){
         //TODO Letra temporal, hay que cambiarlo por la de verdad
-        inputVisualizer.GetComponent<InputVisualizer>().AddLetter(s);
+        if(listChars.Count < NUMBER_OF_INPUTS){
+            inputVisualizer.GetComponent<InputVisualizer>().AddLetter(s);
+            listChars.Add(s);
+        } else {
+            Debug.Log("Se ha llegado al número máximo de inputs");
+        }
     }
 
     private void InstantiateObjects(){
@@ -44,7 +50,28 @@ public class LevelController : MonoBehaviour
     }
 
     public void StartMovement(){
-        //player.GetComponent<CharacterMovement>().StartMovement(listChars);
+        StartCoroutine(SequentialMovement());
+
+
     }
+
+    IEnumerator SequentialMovement()
+     {
+
+         if(listChars.Count == NUMBER_OF_INPUTS){
+             foreach(string s in listChars){
+                 player.GetComponent<CharacterMovement>().Move(s);
+                 yield return new WaitForSeconds(1f);
+             }
+         }
+         /*
+         iTween.MoveTo(tile.gameObject, iTween.Hash("position", destination1, "time", 2f));
+
+
+         iTween.MoveTo(tile.gameObject, iTween.Hash("position", destination2, "time", 2f));
+         yield return new WaitForSeconds(2f);*/
+
+         // ... other sequential actions here?
+     }
 
 }
