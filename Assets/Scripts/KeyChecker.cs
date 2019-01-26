@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO hay que hacer dos métodos: uno para inicializar los espacios vacios y otro para ir llenandolos uno a uno
 
 
 public class KeyChecker : MonoBehaviour
