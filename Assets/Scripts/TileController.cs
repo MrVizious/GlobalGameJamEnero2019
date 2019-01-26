@@ -39,6 +39,14 @@ public class TileController : MonoBehaviour
         }
     }
 
+
+
+    //TODO checkPossibleAction
+
+    public bool CheckPosibleMovement(int x, int y){
+        return obstacleMatrix[y,x] != 1;
+    }
+
     //Solo para debugging
     private void DrawObstacles(){
         for(int y=0; y<obstacleMatrix.GetLength(0); y++){

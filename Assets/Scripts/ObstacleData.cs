@@ -17,7 +17,4 @@ public class ObstacleData : MonoBehaviour
             default: return null;
         }
     }
-
-    //TODO checkPossibleMovement
-    //TODO checkPossibleAction
 }

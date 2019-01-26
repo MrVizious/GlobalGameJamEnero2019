@@ -9,7 +9,7 @@ public class LevelController : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject inputVisualizer;
     private GameObject player;
-
+    public GameObject tileController;
     private bool inAction;
 
     void Start(){
@@ -34,17 +34,13 @@ public class LevelController : MonoBehaviour
 
     //Simplemente empieza la co-rutina de SequentialActions
     public void StartActions(){
-        if(!inAction){
-
-            StartCoroutine(SequentialActions());
-        }
-
+        StartCoroutine(SequentialActions());
     }
 
     //Ejecuta cada acción del script CharacterController y pausa un segundo antes de ejecutar la siguiente
     IEnumerator SequentialActions()
      {
-         if(listChars.Count == NUMBER_OF_INPUTS){
+         if(listChars.Count == NUMBER_OF_INPUTS && !inAction){
              inAction = true;
              foreach(string s in listChars){
                  player.GetComponent<CharacterAction>().Action(s);
@@ -52,5 +48,9 @@ public class LevelController : MonoBehaviour
              }
              inAction = false;
          }
+     }
+
+     public bool CheckPosibleMovement(int x, int y){
+         return tileController.GetComponent<TileController>().CheckPosibleMovement(x, y);
      }
 }
