@@ -6,31 +6,38 @@ using UnityEngine.UI;
 public class InputVisualizer : MonoBehaviour
 {
 
-    private Text inputArray;
     private RectTransform rectTransform;
-    private List<string> listChars;
-    public GameObject keyChecker;
-    string res;
+    public GameObject letterHolderPrefab;
+    public GameObject letterPrefab;
+    private List<GameObject> letterHolders;
+    private List<GameObject> letters;
+    public float Y_POSITION_LEVEL;
 
     public void Start()
     {
-        inputArray = GetComponent<Text>();
-        getListFromKeyChecker();
-        initializeText();
+        letterHolders = new List<GameObject>();
+        letters = new List<GameObject>();
     }
 
-    private void initializeText()
-    {
-        foreach (string s in listChars)
-        {
-            res += s;
+
+    public void CreateLetterHolders(int maxNumInput){
+        float startPosition = -0.5f * (maxNumInput-1);
+        for(int i=0; i< maxNumInput; i++){
+            letterHolders.Add(Instantiate(letterHolderPrefab, new Vector3(i+startPosition, Y_POSITION_LEVEL, 0), Quaternion.identity));
         }
-        inputArray.text = res;
     }
 
-    //Llama al método getListChars de un GameObject que tenga el script KeyChecker que se le haya dado en el inspector
-    private void getListFromKeyChecker()
-    {
-        listChars = keyChecker.GetComponent<KeyChecker>().getListChars();
+    public void AddLetter(string s){
+        if(!(letters.Count >= letterHolders.Count)){
+            //TODO Método temporal, usa un prefab en lugar de una letra (sprite)
+            letters.Add(Instantiate(letterPrefab, letterHolders[letters.Count].transform));
+            Debug.Log("La letra escrita es: " + s);
+        } else {
+            Debug.Log("Se ha pedido crear más letras que espacios permitidos");
+        }
     }
+
+
+
+
 }

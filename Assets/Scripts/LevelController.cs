@@ -12,16 +12,27 @@ public class LevelController : MonoBehaviour
     }
 
     //[SerializeField]
+    public int NUMBER_OF_INPUTS;
     public List<string> listChars;
     public List<TrackedGameObject> trackedGameObjects;
     public TrackedGameObject playerPrefab;
-
+    public GameObject inputVisualizer;
     private GameObject player;
 
     void Start(){
         InstantiateObjects();
+        CreateLetterHolders();
+
     }
 
+    private void CreateLetterHolders(){
+        inputVisualizer.GetComponent<InputVisualizer>().CreateLetterHolders(NUMBER_OF_INPUTS);
+    }
+
+    public void AddLetter(string s){
+        //TODO Letra temporal, hay que cambiarlo por la de verdad
+        inputVisualizer.GetComponent<InputVisualizer>().AddLetter(s);
+    }
 
     private void InstantiateObjects(){
         player = Instantiate(playerPrefab.trackedGameObject);
@@ -33,6 +44,7 @@ public class LevelController : MonoBehaviour
     }
 
     public void StartMovement(){
-        player.GetComponent<CharacterMovement>().StartMovement(listChars);
+        //player.GetComponent<CharacterMovement>().StartMovement(listChars);
     }
+
 }
