@@ -12,10 +12,12 @@ This game was created during the Global Game Jam held in January of 2019, in the
 
 ## Credits
 ### Programming
-Javier Riera Chirivella [GitHub Page](https://github.com/MrVizious/)
-Ferran Devesa Marco [Github Page](https://github.com/Kyru)
+- Javier Riera Chirivella: [GitHub Page](https://github.com/MrVizious/)  
+- Ferran Devesa Marco: [Github Page](https://github.com/Kyru)
 ### Art
-Blackiat [Instagram](https://www.instagram.com/blackiat/?hl=es)
-Extra help from: Alejandro Madrid and Ferran Devesa Marco [Github Page](https://github.com/Kyru)
+- Blackiat: [Instagram](https://www.instagram.com/blackiat/?hl=es)
+- Ferran Devesa Marco [Github Page](https://github.com/Kyru)  
+Extra help from:  
+- Alejandro Madrid
 ### Music
-valki
+- valki
