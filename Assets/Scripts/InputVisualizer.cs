@@ -23,10 +23,20 @@ public class InputVisualizer : MonoBehaviour
 
 
     public void CreateLetterHolders(int maxNumInput){
+        if(letterHolders == null) letterHolders = new List<GameObject>();
         float startPosition = -0.5f * (maxNumInput-1);
         for(int i=0; i< maxNumInput; i++){
-            letterHolders.Add(Instantiate(letterHolderPrefab, new Vector3(i+startPosition, Y_POSITION_LEVEL, 0), Quaternion.identity));
+            letterHolders.Add(Instantiate(letterHolderPrefab, new Vector3(i+startPosition + transform.parent.transform.position.x, transform.parent.transform.position.y + Y_POSITION_LEVEL, 0), Quaternion.identity));
+            Debug.Log("Letter holder number " + i + " created!");
         }
+    }
+
+    public void DeleteNextLetter(){
+        letters.RemoveAt(0);
+    }
+
+    public void DeleteLetter(int index){
+        letters.RemoveAt(index);
     }
 
     public void AddLetter(string s){

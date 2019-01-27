@@ -21,6 +21,7 @@ public class CharacterAction : MonoBehaviour
         switch (s)
         {
             case "w":
+                Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y + 1));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y + 1))
                 {
                     target = transform.position + new Vector3(0, 1, 0);
@@ -31,6 +32,7 @@ public class CharacterAction : MonoBehaviour
                 }
                 break;
             case "a":
+                Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x - 1, (int)transform.position.y));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x - 1, (int)transform.position.y))
                 {
                     target = transform.position + new Vector3(-1, 0, 0);
@@ -41,6 +43,7 @@ public class CharacterAction : MonoBehaviour
                 }
                 break;
             case "s":
+                Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y - 1));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y - 1))
                 {
                     target = transform.position + new Vector3(0, -1, 0);
@@ -51,6 +54,7 @@ public class CharacterAction : MonoBehaviour
                 }
                 break;
             case "d":
+                Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x + 1, (int)transform.position.y));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x + 1, (int)transform.position.y))
                 {
                     target = transform.position + new Vector3(1, 0, 0);

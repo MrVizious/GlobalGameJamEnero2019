@@ -92,8 +92,6 @@ MonoBehaviour:
   levelName: Recibidor
   elements:
   - {fileID: 6475418650871049057}
-  prefabObstacle: {fileID: 1378481799966271122, guid: 5f5c13cc57d2c684bb86d05e5b3f7811,
-    type: 3}
 --- !u!114 &2339091302845767254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +328,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NUMBER_OF_INPUTS: 10
-  listChars: []
+  listChars:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   inputVisualizer: {fileID: 2339091303204531006}
   player: {fileID: 2339091304127854412}
   tileController: {fileID: 2339091302845767252}

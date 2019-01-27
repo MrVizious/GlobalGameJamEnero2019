@@ -10,7 +10,6 @@ public class LevelController : MonoBehaviour
     public GameObject player;
     public GameObject tileController;
     private bool inAction;
-    public GameObject sceneManager;
 
 
     void Start(){
@@ -24,6 +23,7 @@ public class LevelController : MonoBehaviour
     }
 
     public void AddLetter(string s){
+        Debug.Log("Tamaño de listChars: " + listChars.Count);
         if(listChars.Count < NUMBER_OF_INPUTS){
             Debug.Log("Enviando como string el carácter: *" + s +"*");
             inputVisualizer.GetComponent<InputVisualizer>().AddLetter(s);
@@ -49,9 +49,5 @@ public class LevelController : MonoBehaviour
              }
              inAction = false;
          }
-     }
-
-     public void ChangeScene(string s){
-         sceneManager.GetComponent<SceneManagerScript>().ChangeScene(s);
      }
 }

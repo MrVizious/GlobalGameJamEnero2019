@@ -6,13 +6,13 @@ public class TileController : MonoBehaviour
 {
     public string levelName;
     public List<GameObject> elements;
-    //public GameObject prefabObstacle;
+    public GameObject prefabObstacle;
 
     private int[,] obstacleMatrix;
 
     void Start(){
         FillObstacleMatrix();
-        //DrawObstacles();
+        DrawObstacles();
         FillObstacleMatrixWithElements();
     }
 
@@ -39,7 +39,7 @@ public class TileController : MonoBehaviour
             }
         }
     }
-    
+
 
     public List<GameObject> getElementsAround(int x, int y){
         List<GameObject> elementsAround = new List<GameObject>();
@@ -59,14 +59,13 @@ public class TileController : MonoBehaviour
     }
 
     //Solo para debugging
-    /*
     private void DrawObstacles(){
         for(int y=0; y<obstacleMatrix.GetLength(0); y++){
             for(int x=0; x<obstacleMatrix.GetLength(1); x++){
-                if(obstacleMatrix[y,x]==1) Instantiate(prefabObstacle, new Vector3(x, y, 0), Quaternion.identity);
+                if(obstacleMatrix[y,x]==1) Instantiate(prefabObstacle, new Vector3(x, y, (float)-0.5), Quaternion.identity);
             }
         }
-    }*/
+    }
 
 
 }
