@@ -24,11 +24,11 @@ public class CharacterAction : MonoBehaviour
                 Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y + 1));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y + 1))
                 {
-                    target = transform.position + new Vector3(0, 1, 0);
                     animator.SetBool("LookingSide", false);
                     animator.SetBool("LookingSideLeft", false);
                     animator.SetBool("LookingBack", true);
                     animator.SetBool("LookingForward", false);
+                    target = transform.position + new Vector3(0, 1, 0);
 
                 }
                 break;
@@ -36,33 +36,33 @@ public class CharacterAction : MonoBehaviour
                 Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x - 1, (int)transform.position.y));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x - 1, (int)transform.position.y))
                 {
-                    target = transform.position + new Vector3(-1, 0, 0);
                     animator.SetBool("LookingSide", false);
                     animator.SetBool("LookingBack", false);
                     animator.SetBool("LookingForward", false);
                     animator.SetBool("LookingSideLeft", true);
+                    target = transform.position + new Vector3(-1, 0, 0);
                 }
                 break;
             case "s":
                 Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y - 1));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y - 1))
                 {
-                    target = transform.position + new Vector3(0, -1, 0);
                     animator.SetBool("LookingSide", false);
                     animator.SetBool("LookingBack", false);
                     animator.SetBool("LookingForward", true);
                     animator.SetBool("LookingSideLeft", false);
+                    target = transform.position + new Vector3(0, -1, 0);
                 }
                 break;
             case "d":
                 Debug.Log("Se puede mover? " + tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x + 1, (int)transform.position.y));
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x + 1, (int)transform.position.y))
                 {
-                    target = transform.position + new Vector3(1, 0, 0);
                     animator.SetBool("LookingSide", true);
                     animator.SetBool("LookingBack", false);
                     animator.SetBool("LookingForward", false);
                     animator.SetBool("LookingSideLeft", false);
+                    target = transform.position + new Vector3(1, 0, 0);
                 }
                 break;
             case " ":

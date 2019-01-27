@@ -35,12 +35,14 @@ public class LevelController : MonoBehaviour
 
     //Simplemente empieza la co-rutina de SequentialActions
     public void StartActions(){
+        inputVisualizer.GetComponent<InputVisualizer>().StartLettersList();
         StartCoroutine(SequentialActions());
     }
 
     //Ejecuta cada acción del script CharacterController y pausa un segundo antes de ejecutar la siguiente
     IEnumerator SequentialActions()
      {
+
          if(listChars.Count == NUMBER_OF_INPUTS && !inAction){
              inAction = true;
              foreach(string s in listChars){

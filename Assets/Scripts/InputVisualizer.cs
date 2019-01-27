@@ -23,7 +23,7 @@ public class InputVisualizer : MonoBehaviour
 
 
     public void CreateLetterHolders(int maxNumInput){
-        if(letterHolders == null) letterHolders = new List<GameObject>();
+        if(letterHolders == null || letterHolders.Count == 0) letterHolders = new List<GameObject>();
         float startPosition = -0.5f * (maxNumInput-1);
         for(int i=0; i< maxNumInput; i++){
             letterHolders.Add(Instantiate(letterHolderPrefab, new Vector3(i+startPosition + transform.parent.transform.position.x, transform.parent.transform.position.y + Y_POSITION_LEVEL, 0), Quaternion.identity));
@@ -39,6 +39,10 @@ public class InputVisualizer : MonoBehaviour
         letters.RemoveAt(index);
     }
 
+    public void StartLettersList(){
+        letters = new List<GameObject>();
+    }
+
     public void AddLetter(string s){
         if(!(letters.Count >= letterHolders.Count)){
             letters.Add(Instantiate(letterPrefab, letterHolders[letters.Count].transform));
@@ -49,6 +53,7 @@ public class InputVisualizer : MonoBehaviour
 
         } else {
             Debug.Log("Se ha pedido crear más letras que espacios permitidos");
+            Debug.Log("Letter count: " + letters.Count + ". Letter holders count: " + letterHolders.Count);
         }
     }
 
