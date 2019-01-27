@@ -13,14 +13,24 @@ public class Element : MonoBehaviour
 
     public void Action(string inputString){
         if(inputString.Equals(activationKey)){
-            Debug.Log("Acción realizada por " + gameObject.name);
+            switch(inputString){
+                "p": LoadSalon();
+                     break;
+            }
         }
     }
+
+    public void ShowActionLetter(){
+        Debug.Log("Enseñando la letra del objeto " + gameObject.Name);
+    }
+
+
+    //---------------------------
+    //  Colección de acciones
+    //---------------------------
+
+    public void LoadSalon(){
+        PersistentManagerScript.Instance.ChangeScene("Cocina - Salon")
+    }
+
 }
-
-//TODO arreglar lo de las letras que no aparecen
-
-// TODO al entrar por una puerta por ejemplo, pisar a un gato (creo que esto se comprueba en el mismo método de check collision)
-
-// TODO Singleton
-// TODO inventario

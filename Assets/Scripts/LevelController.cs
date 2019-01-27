@@ -20,6 +20,7 @@ public class LevelController : MonoBehaviour
 
     private void CreateLetterHolders(){
         inputVisualizer.GetComponent<InputVisualizer>().CreateLetterHolders(NUMBER_OF_INPUTS);
+        inputVisualizer.GetComponent<InputVisualizer>().StartLettersList();
     }
 
     public void AddLetter(string s){
@@ -35,7 +36,7 @@ public class LevelController : MonoBehaviour
 
     //Simplemente empieza la co-rutina de SequentialActions
     public void StartActions(){
-        inputVisualizer.GetComponent<InputVisualizer>().StartLettersList();
+
         StartCoroutine(SequentialActions());
     }
 

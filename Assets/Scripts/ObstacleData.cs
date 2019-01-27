@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstacleData : MonoBehaviour
 {
     //  LOS DATOS TIENEN QUE ESTAR PUESTOS COMO CON UN FLIP Y
-    private int[,] recibidorData = new int [,]{{0,1,0,1,0},
+    private int[,] recibidorData = new int [,]{{0,1,1,1,0},
                                                {1,0,0,0,1},
                                                {1,0,0,0,1},
                                                {1,0,0,0,1},

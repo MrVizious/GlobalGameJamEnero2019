@@ -16,18 +16,17 @@ public class InputVisualizer : MonoBehaviour
 
     public void Start()
     {
-        letterHolders = new List<GameObject>();
-        letters = new List<GameObject>();
-        sprites = Resources.LoadAll<Sprite>("SpriteLetters");
+        //letterHolders = new List<GameObject>();
+        //letters = new List<GameObject>();
+
     }
 
-
     public void CreateLetterHolders(int maxNumInput){
-        if(letterHolders == null || letterHolders.Count == 0) letterHolders = new List<GameObject>();
+        letterHolders = new List<GameObject>();
         float startPosition = -0.5f * (maxNumInput-1);
         for(int i=0; i< maxNumInput; i++){
             letterHolders.Add(Instantiate(letterHolderPrefab, new Vector3(i+startPosition + transform.parent.transform.position.x, transform.parent.transform.position.y + Y_POSITION_LEVEL, 0), Quaternion.identity));
-            Debug.Log("Letter holder number " + i + " created!");
+            Debug.Log("Letter holder number " + i + " created! Count of LetterHolders: " + letterHolders.Count);
         }
     }
 
@@ -41,20 +40,22 @@ public class InputVisualizer : MonoBehaviour
 
     public void StartLettersList(){
         letters = new List<GameObject>();
+        sprites = Resources.LoadAll<Sprite>("SpriteLetters");
     }
 
     public void AddLetter(string s){
-        if(!(letters.Count >= letterHolders.Count)){
-            letters.Add(Instantiate(letterPrefab, letterHolders[letters.Count].transform));
+        Debug.Log("Letter count a priori: " + letters.Count + ". Letter holders count: " + letterHolders.Count);
+        //if(!(letters.Count >= letterHolders.Count)){
+            letters.Add(Instantiate(letterPrefab, new Vector3((float) letterHolders[letters.Count].transform.position.x + 0.15f,(float)  letterHolders[letters.Count].transform.position.y + 0.15f,(float)  letterHolders[letters.Count].transform.position.z), Quaternion.identity));
             Debug.Log("La letra escrita es: " + s);
             letters[letters.Count-1].GetComponent<LetterSpriteManager>().setSprites(sprites);
             letters[letters.Count-1].GetComponent<LetterSpriteManager>().ChangeSprite(s);
             Debug.Log("Creada la letra: " + letters[letters.Count-1]);
 
-        } else {
+        /*} else {
             Debug.Log("Se ha pedido crear más letras que espacios permitidos");
-            Debug.Log("Letter count: " + letters.Count + ". Letter holders count: " + letterHolders.Count);
-        }
+        }*/
+        Debug.Log("Letter count a posteriori: " + letters.Count + ". Letter holders count: " + letterHolders.Count);
     }
 
 
