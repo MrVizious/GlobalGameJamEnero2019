@@ -46,7 +46,7 @@ public class InputVisualizer : MonoBehaviour
     public void AddLetter(string s){
         Debug.Log("Letter count a priori: " + letters.Count + ". Letter holders count: " + letterHolders.Count);
         //if(!(letters.Count >= letterHolders.Count)){
-            letters.Add(Instantiate(letterPrefab, new Vector3((float) letterHolders[letters.Count].transform.position.x + 0.15f,(float)  letterHolders[letters.Count].transform.position.y + 0.15f,(float)  letterHolders[letters.Count].transform.position.z), Quaternion.identity));
+            letters.Add(Instantiate(letterPrefab, new Vector3((float) letterHolders[letters.Count].transform.position.x + 0.15f,(float)  letterHolders[letters.Count].transform.position.y + 0.15f,(float)  letterHolders[letters.Count].transform.position.z - 0.2f), Quaternion.identity));
             Debug.Log("La letra escrita es: " + s);
             letters[letters.Count-1].GetComponent<LetterSpriteManager>().setSprites(sprites);
             letters[letters.Count-1].GetComponent<LetterSpriteManager>().ChangeSprite(s);

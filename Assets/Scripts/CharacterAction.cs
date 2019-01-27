@@ -87,7 +87,7 @@ public class CharacterAction : MonoBehaviour
         List<GameObject> listElementsAround = tileController.GetComponent<TileController>().getElementsAround((int)transform.position.x, (int)transform.position.y);
         foreach (GameObject o in listElementsAround)
         {
-            o.GetComponent<Element>().showActionLetter();
+            o.GetComponent<Element>().ShowActionLetter();
         }
     }
 

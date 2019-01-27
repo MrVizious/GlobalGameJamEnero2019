@@ -14,14 +14,14 @@ public class Element : MonoBehaviour
     public void Action(string inputString){
         if(inputString.Equals(activationKey)){
             switch(inputString){
-                "p": LoadSalon();
+                case "p": LoadSalon();
                      break;
             }
         }
     }
 
     public void ShowActionLetter(){
-        Debug.Log("Enseñando la letra del objeto " + gameObject.Name);
+        Debug.Log("Enseñando la letra del objeto " + gameObject.name);
     }
 
 
@@ -30,7 +30,7 @@ public class Element : MonoBehaviour
     //---------------------------
 
     public void LoadSalon(){
-        PersistentManagerScript.Instance.ChangeScene("Cocina - Salon")
+        PersistentManagerScript.Instance.ChangeScene("Cocina-Salon");
     }
 
 }
