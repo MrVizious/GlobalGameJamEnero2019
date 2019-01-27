@@ -26,9 +26,10 @@ public class CharacterAction : MonoBehaviour
                 {
                     target = transform.position + new Vector3(0, 1, 0);
                     animator.SetBool("LookingSide", false);
+                    animator.SetBool("LookingSideLeft", false);
                     animator.SetBool("LookingBack", true);
                     animator.SetBool("LookingForward", false);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
                 }
                 break;
             case "a":
@@ -36,10 +37,10 @@ public class CharacterAction : MonoBehaviour
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x - 1, (int)transform.position.y))
                 {
                     target = transform.position + new Vector3(-1, 0, 0);
-                    animator.SetBool("LookingSide", true);
+                    animator.SetBool("LookingSide", false);
                     animator.SetBool("LookingBack", false);
                     animator.SetBool("LookingForward", false);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                    animator.SetBool("LookingSideLeft", true);
                 }
                 break;
             case "s":
@@ -50,7 +51,7 @@ public class CharacterAction : MonoBehaviour
                     animator.SetBool("LookingSide", false);
                     animator.SetBool("LookingBack", false);
                     animator.SetBool("LookingForward", true);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                    animator.SetBool("LookingSideLeft", false);
                 }
                 break;
             case "d":
@@ -61,7 +62,7 @@ public class CharacterAction : MonoBehaviour
                     animator.SetBool("LookingSide", true);
                     animator.SetBool("LookingBack", false);
                     animator.SetBool("LookingForward", false);
-                    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                    animator.SetBool("LookingSideLeft", false);
                 }
                 break;
             case " ":
