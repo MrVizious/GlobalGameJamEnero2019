@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 480139073}
   - component: {fileID: 480139072}
   m_Layer: 0
-  m_Name: DogAnimation
+  m_Name: Dog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -420,7 +420,6 @@ MonoBehaviour:
   inputVisualizer: {fileID: 0}
   player: {fileID: 1022005757}
   tileController: {fileID: 1746393340}
-  sceneManager: {fileID: 1710546647}
 --- !u!4 &1057294933
 Transform:
   m_ObjectHideFlags: 0
@@ -1239,6 +1238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: 
   elements: []
+  prefabObstacle: {fileID: 0}
 --- !u!4 &1746393342
 Transform:
   m_ObjectHideFlags: 0
@@ -1416,12 +1416,12 @@ PrefabInstance:
     - target: {fileID: 5928607633089947575, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.29
+      value: -4.91
       objectReference: {fileID: 0}
     - target: {fileID: 5928607633089947575, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -2.65
       objectReference: {fileID: 0}
     - target: {fileID: 5928607633089947575, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4,
         type: 3}
@@ -1468,6 +1468,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5928607633089947575, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928607633089947575, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5928607633089947575, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c68203cac8af4f1e8d8665f7e9eb3e4, type: 3}
 --- !u!1 &6209927110260600023
@@ -1483,7 +1498,7 @@ GameObject:
   - component: {fileID: 146068241093211337}
   - component: {fileID: 989590266328660579}
   m_Layer: 0
-  m_Name: GranpaAnimation
+  m_Name: Granpa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
