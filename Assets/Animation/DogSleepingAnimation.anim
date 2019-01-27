@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AwakeAnimation
+  m_Name: DogSleepingAnimation
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: cb9a83584010142aa828aa9e2ae1be0c, type: 3}
+      value: {fileID: 21300000, guid: e24d2f71abc49424995e6313b4cf20ff, type: 3}
+    - time: 0.8333333
+      value: {fileID: 21300000, guid: 6ccc68015b8624931b749d5ef2b38d08, type: 3}
+    - time: 1.5666667
+      value: {fileID: 21300000, guid: e24d2f71abc49424995e6313b4cf20ff, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: cb9a83584010142aa828aa9e2ae1be0c, type: 3}
+    - {fileID: 21300000, guid: e24d2f71abc49424995e6313b4cf20ff, type: 3}
+    - {fileID: 21300000, guid: 6ccc68015b8624931b749d5ef2b38d08, type: 3}
+    - {fileID: 21300000, guid: e24d2f71abc49424995e6313b4cf20ff, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 1.5833334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

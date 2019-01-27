@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: f29457cf821734cb39f54a0300321c74
+guid: e3782ecbe0b1845d681f9fe1109280ed
 TextureImporter:
   fileIDToRecycleName:
-    21300000: perretet_0
+    21300000: abu1_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -85,13 +85,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: perretet_0
+      name: abu1_0
       rect:
         serializedVersion: 2
-        x: 1308
-        y: 788
-        width: 317
-        height: 336
+        x: 1361
+        y: 774
+        width: 406
+        height: 842
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,7 +99,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65a8a3932afa435bb979875568fc9bf
+      spriteID: d65d47e1f953b4b1d95af8f2778cc179
       vertices: []
       indices: 
       edges: []
@@ -107,7 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1ea67078e4025408e882a9f5fd520a46
+    spriteID: 60234943bbec44e128ad452dcef64631
     vertices: []
     indices: 
     edges: []
