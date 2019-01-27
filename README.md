@@ -16,7 +16,8 @@ This game was created during the Global Game Jam held in January of 2019, in the
 - Ferran Devesa Marco: [Github Page](https://github.com/Kyru)
 ### Art
 - Blackiat: [Instagram](https://www.instagram.com/blackiat/?hl=es)
-- Ferran Devesa Marco [Github Page](https://github.com/Kyru)  
+- Ferran Devesa Marco: [Github Page](https://github.com/Kyru)  
+
 Extra help from:  
 - Alejandro Madrid
 ### Music
