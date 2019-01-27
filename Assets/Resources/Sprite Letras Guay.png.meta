@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 853280d8f22c34486b4856baa98961ba
+guid: ab71e231e811247d6aed2fbd28ea6282
 TextureImporter:
   fileIDToRecycleName:
     21300000: Sprite Letras Guay_0
@@ -34,40 +34,7 @@ TextureImporter:
     21300058: Sprite Letras Guay_29
     21300060: Sprite Letras Guay_30
     21300062: Sprite Letras Guay_31
-    21300064: Sprite Letras Guay_32
-    21300066: SpriteLetters_0
-    21300068: SpriteLetters_1
-    21300070: SpriteLetters_2
-    21300072: SpriteLetters_3
-    21300074: SpriteLetters_4
-    21300076: SpriteLetters_5
-    21300078: SpriteLetters_6
-    21300080: SpriteLetters_7
-    21300082: SpriteLetters_8
-    21300084: SpriteLetters_9
-    21300086: SpriteLetters_10
-    21300088: SpriteLetters_11
-    21300090: SpriteLetters_12
-    21300092: SpriteLetters_13
-    21300094: SpriteLetters_14
-    21300096: SpriteLetters_14
-    21300098: SpriteLetters_15
-    21300100: SpriteLetters_16
-    21300102: SpriteLetters_17
-    21300104: SpriteLetters_18
-    21300106: SpriteLetters_26
-    21300108: SpriteLetters_19
-    21300110: SpriteLetters_20
-    21300112: SpriteLetters_21
-    21300114: SpriteLetters_22
-    21300116: SpriteLetters_23
-    21300118: SpriteLetters_24
-    21300120: SpriteLetters_25
-    21300122: SpriteLetters_27
-    21300124: SpriteLetters_28
-    21300126: SpriteLetters_29
-    21300128: SpriteLetters_30
-    21300130: SpriteLetters_31
+    21300064: Sprite Letras Guay_34
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -150,641 +117,661 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpriteLetters_0
+      name: Sprite Letras Guay_0
       rect:
         serializedVersion: 2
-        x: 437
-        y: 1692
-        width: 125
-        height: 177
-      alignment: 6
+        x: 377
+        y: 1627
+        width: 204
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d873a353601724e00bb7df4f176acb64
+      spriteID: a1fa5b212aace4b6ca3d2decb9ce474d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_1
+      name: Sprite Letras Guay_1
       rect:
         serializedVersion: 2
-        x: 733
-        y: 1692
-        width: 125
-        height: 177
-      alignment: 6
+        x: 665
+        y: 1627
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a8d729e641b54e14a0a02ff0d0317c9
+      spriteID: 7e30fffe29e7442678aa790c445a9062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_2
+      name: Sprite Letras Guay_2
       rect:
         serializedVersion: 2
-        x: 1021
-        y: 1692
-        width: 130
-        height: 177
-      alignment: 6
+        x: 964
+        y: 1627
+        width: 202
+        height: 243
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cef26843150b4135afc74b015917623
+      spriteID: 10cda054b5c5349c0a81aed3ca5e623b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_3
+      name: Sprite Letras Guay_3
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 1692
-        width: 126
-        height: 177
-      alignment: 6
+        x: 1259
+        y: 1627
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f268ba077d76e4c8ea3ab261dbed892a
+      spriteID: 6770fdfbfdce2477ab9b7718edc69a44
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_4
+      name: Sprite Letras Guay_4
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 1696
-        width: 125
-        height: 173
-      alignment: 6
+        x: 1540
+        y: 1624
+        width: 207
+        height: 246
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5946f8e71bbb1428a8c7cdb73e3a1edc
+      spriteID: b956a10f7f9ab4170bcb531b5931026f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_5
+      name: Sprite Letras Guay_5
       rect:
         serializedVersion: 2
-        x: 1901
-        y: 1696
-        width: 125
-        height: 173
-      alignment: 6
+        x: 1823
+        y: 1624
+        width: 226
+        height: 246
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a938effd3e9af4d6d9ff0bdc3d65e3ed
+      spriteID: f046895ef1692499b851516db366d3e3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_6
+      name: Sprite Letras Guay_6
       rect:
         serializedVersion: 2
-        x: 2194
-        y: 1692
-        width: 125
-        height: 177
-      alignment: 6
+        x: 2127
+        y: 1627
+        width: 201
+        height: 243
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 739fb6c9eb02149388d2bebb2043b807
+      spriteID: b50fa19026d1141a28396a31c17c9d1f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_7
+      name: Sprite Letras Guay_7
       rect:
         serializedVersion: 2
-        x: 2487
-        y: 1692
-        width: 125
-        height: 177
-      alignment: 6
+        x: 2420
+        y: 1627
+        width: 202
+        height: 243
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b2993f6528d4565b5d7cf2b3f8f39b
+      spriteID: ae8781e77f87a4c1ca600eec8ca5af9e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_8
+      name: Sprite Letras Guay_8
       rect:
         serializedVersion: 2
-        x: 2806
-        y: 1696
-        width: 75
-        height: 173
-      alignment: 6
+        x: 2706
+        y: 1627
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3308de414f9de468f812ff062d49838d
+      spriteID: 621094a2d05244c7fb76f3e0d8f0e2dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_9
+      name: Sprite Letras Guay_9
       rect:
         serializedVersion: 2
-        x: 3069
-        y: 1692
-        width: 131
-        height: 177
-      alignment: 6
+        x: 3006
+        y: 1624
+        width: 202
+        height: 245
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621d86894272d438fa593f5bc8d59fc6
+      spriteID: a8f0ddae030a140a2859ae89c93c85fc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_10
+      name: Sprite Letras Guay_10
       rect:
         serializedVersion: 2
-        x: 437
-        y: 1396
-        width: 125
-        height: 173
-      alignment: 6
+        x: 377
+        y: 1329
+        width: 204
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4085f986175d840b2a0b6234a125556c
+      spriteID: d96599d6c56e74b4dacaf4a0f2039746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_11
+      name: Sprite Letras Guay_11
       rect:
         serializedVersion: 2
-        x: 730
-        y: 1396
-        width: 125
-        height: 173
-      alignment: 6
+        x: 665
+        y: 1329
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ccb38a840d354915b0e98d806bb2759
+      spriteID: 03d98302c72f443fa843fa2042d2dcbc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_12
+      name: Sprite Letras Guay_12
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 1396
-        width: 125
-        height: 173
-      alignment: 6
+        x: 964
+        y: 1329
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96a0deaa0ceb642f5bf3f2a347d8f8eb
+      spriteID: 57d33140ce8424891bb1c6007600f695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_13
+      name: Sprite Letras Guay_13
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 1396
-        width: 126
-        height: 173
-      alignment: 6
+        x: 1259
+        y: 1329
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 447ef2b1bda3948e7994c44fc610e76c
+      spriteID: b3143b560515a490eab25b9ae6b85b27
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_14
+      name: Sprite Letras Guay_14
       rect:
         serializedVersion: 2
-        x: 1901
-        y: 1396
-        width: 125
-        height: 173
-      alignment: 6
+        x: 1540
+        y: 1329
+        width: 205
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2d980de36c0b4436b79109313739385
+      spriteID: 8387bbafd6a7a4f10bc8e4d7400a3be7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_15
+      name: Sprite Letras Guay_15
       rect:
         serializedVersion: 2
-        x: 2194
-        y: 1396
-        width: 125
-        height: 173
-      alignment: 6
+        x: 1828
+        y: 1329
+        width: 219
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c04523d5aa3294b999fe0e4cf4f294d2
+      spriteID: 7f1d1817c9f4f49e38c44e805e873a4d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_16
+      name: Sprite Letras Guay_16
       rect:
         serializedVersion: 2
-        x: 2487
-        y: 1396
-        width: 125
-        height: 173
-      alignment: 6
+        x: 2127
+        y: 1329
+        width: 201
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3652852a17af64d6f99c7a7f556ab614
+      spriteID: 0692c242858b741529fed5c86925ba6c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_17
+      name: Sprite Letras Guay_17
       rect:
         serializedVersion: 2
-        x: 2780
-        y: 1396
-        width: 127
-        height: 173
-      alignment: 6
+        x: 2420
+        y: 1329
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fadddcb556ee4282ba0a468def23b3b
+      spriteID: 46d480a6eed0a4312b9a774106a8d1c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_18
+      name: Sprite Letras Guay_18
       rect:
         serializedVersion: 2
-        x: 3069
-        y: 1396
-        width: 131
-        height: 173
-      alignment: 6
+        x: 2706
+        y: 1329
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aabbba971d2f840e0acbcf6a0cc0751d
+      spriteID: 370f0ee27615f4f9baa7b1927306d2c7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_26
+      name: Sprite Letras Guay_19
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 1396
-        width: 125
-        height: 197
-      alignment: 6
+        x: 3006
+        y: 1329
+        width: 202
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b5258007c17436b8e237ca55f8d55e
+      spriteID: 1e768ab93f4f945c2a58f4e4f8144be0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_19
+      name: Sprite Letras Guay_20
       rect:
         serializedVersion: 2
-        x: 437
-        y: 1096
-        width: 125
-        height: 173
-      alignment: 6
+        x: 380
+        y: 779
+        width: 230
+        height: 252
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d8c5552375ab4756bfc404fe993f005
+      spriteID: 28c08055014ac4b7294f4e0109202d1d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_20
+      name: Sprite Letras Guay_21
       rect:
         serializedVersion: 2
-        x: 730
-        y: 1096
-        width: 125
-        height: 173
-      alignment: 6
+        x: 389
+        y: 1028
+        width: 202
+        height: 243
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16f301d9b9c1d4369a981d39c591034f
+      spriteID: a621f11b515044096b8e29f0b31fb1a3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_21
+      name: Sprite Letras Guay_22
       rect:
         serializedVersion: 2
-        x: 1021
-        y: 1096
-        width: 127
-        height: 173
-      alignment: 6
+        x: 675
+        y: 1028
+        width: 211
+        height: 246
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8149172205c0847e19fe69ca5685a8fc
+      spriteID: e5c232a85456d4266a0298a9738cd93c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_22
+      name: Sprite Letras Guay_23
       rect:
         serializedVersion: 2
-        x: 1315
-        y: 1096
-        width: 126
-        height: 173
-      alignment: 6
+        x: 975
+        y: 1028
+        width: 202
+        height: 243
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 802499423f9d84170b557f2ecae5de77
+      spriteID: 342d056c1275c458bb80260bcac791ff
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_23
+      name: Sprite Letras Guay_24
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 1096
-        width: 125
-        height: 173
-      alignment: 6
+        x: 1268
+        y: 1026
+        width: 202
+        height: 245
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35dd6a82ede244895bc2aed9e6780e7c
+      spriteID: 7682593d2e87148b69341932ccb0f74d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_24
+      name: Sprite Letras Guay_25
       rect:
         serializedVersion: 2
-        x: 1901
-        y: 1096
-        width: 125
-        height: 173
-      alignment: 6
+        x: 1550
+        y: 1028
+        width: 206
+        height: 243
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87522dbc8277046a18363e9316f63ef8
+      spriteID: 2d3159112d1404eb8aea4210e14688f0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_25
+      name: Sprite Letras Guay_26
       rect:
         serializedVersion: 2
-        x: 2192
-        y: 1096
-        width: 131
-        height: 173
-      alignment: 6
+        x: 1838
+        y: 1028
+        width: 217
+        height: 246
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3865e8cb596b4d248eae16e96541f96
+      spriteID: ffd3b589dd8034e2085a3e8b574d4f78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_27
+      name: Sprite Letras Guay_27
       rect:
         serializedVersion: 2
-        x: 2499
-        y: 1096
-        width: 101
-        height: 185
-      alignment: 6
+        x: 2138
+        y: 1022
+        width: 200
+        height: 249
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65865dcd1ca6845fdb393cda4eb0f5e0
+      spriteID: 520aacbe4730f435da50001c33e41463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_28
+      name: Sprite Letras Guay_28
       rect:
         serializedVersion: 2
-        x: 2794
-        y: 1096
-        width: 99
-        height: 185
-      alignment: 6
+        x: 2431
+        y: 1026
+        width: 202
+        height: 245
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51cc6042df754432da74f833b2968848
+      spriteID: 3980ca306e65148a99b7580f8baa9e9e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_29
+      name: Sprite Letras Guay_29
       rect:
         serializedVersion: 2
-        x: 3046
-        y: 1148
-        width: 186
-        height: 99
-      alignment: 6
+        x: 2713
+        y: 1029
+        width: 206
+        height: 242
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d4ebe0d7195348b0a428e366862d993
+      spriteID: 39f102d322d554ef39a2e5bb23a480cb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_30
+      name: Sprite Letras Guay_30
       rect:
         serializedVersion: 2
-        x: 394
-        y: 863
-        width: 187
-        height: 100
-      alignment: 6
+        x: 2994
+        y: 1019
+        width: 254
+        height: 255
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab34ef65915da4bf68a34eee97539a9a
+      spriteID: 3fd843a565ac64e76bbe29b0aeb03889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteLetters_31
+      name: Sprite Letras Guay_31
       rect:
         serializedVersion: 2
-        x: 737
-        y: 826
-        width: 123
-        height: 173
-      alignment: 6
+        x: 685
+        y: 781
+        width: 201
+        height: 241
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a7d4943b9183460780cd5682b741185
+      spriteID: aafc4424f248f48e78d75cbcba1d57a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite Letras Guay_34
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 740
+        width: 203
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419ac4da4f92f482894c03bbf560892f
       vertices: []
       indices: 
       edges: []
@@ -792,7 +779,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9dc0ce5fcb2074c55bf81158a83d411c
+    spriteID: 210b21fb6d651489c998924b46ecdb53
     vertices: []
     indices: 
     edges: []
