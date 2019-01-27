@@ -29,7 +29,7 @@ public class CharacterAction : MonoBehaviour
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y + 1))
                 {
                     target = transform.position + new Vector3(0, 1, 0);
-
+                    showActions();
                 }
                 break;
             case "a":
@@ -41,6 +41,7 @@ public class CharacterAction : MonoBehaviour
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x - 1, (int)transform.position.y))
                 {
                     target = transform.position + new Vector3(-1, 0, 0);
+                    showActions();
                 }
                 break;
             case "s":
@@ -52,6 +53,7 @@ public class CharacterAction : MonoBehaviour
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x, (int)transform.position.y - 1))
                 {
                     target = transform.position + new Vector3(0, -1, 0);
+                    showActions();
                 }
                 break;
             case "d":
@@ -63,7 +65,7 @@ public class CharacterAction : MonoBehaviour
                 if (tileController.GetComponent<TileController>().CheckPosibleMovement((int)transform.position.x + 1, (int)transform.position.y))
                 {
                     target = transform.position + new Vector3(1, 0, 0);
-
+                    showActions();
                 }
                 break;
             case " ":
@@ -84,7 +86,8 @@ public class CharacterAction : MonoBehaviour
     }
 
     private void showActions(){
-        List<GameObject> listElementsAround = tileController.GetComponent<TileController>().getElementsAround((int)transform.position.x, (int)transform.position.y);
+        Debug.Log("Looking for objects around: "+ target.x + "," + target.y);
+        List<GameObject> listElementsAround = tileController.GetComponent<TileController>().getElementsAround((int)target.x, (int)target.y);
         foreach (GameObject o in listElementsAround)
         {
             o.GetComponent<Element>().ShowActionLetter();

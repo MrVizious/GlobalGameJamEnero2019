@@ -21,7 +21,7 @@ public class Element : MonoBehaviour
     }
 
     public void ShowActionLetter(){
-        Debug.Log("Enseñando la letra del objeto " + gameObject.name);
+        Debug.Log("Enseñando la letra del objeto");
     }
 
 
