@@ -6,6 +6,9 @@ public class Element : MonoBehaviour
 {
     public bool obstacle;
     public string activationKey;
+    public GameObject levelController;
+
+    public GameObject sign;
 
     public bool isObstacle(){
         return obstacle;
@@ -14,13 +17,17 @@ public class Element : MonoBehaviour
     public void Action(string inputString){
         if(inputString.Equals(activationKey)){
             switch(inputString){
-                case "p": LoadSalon();
+                case "p": 
+                            levelController.GetComponent<LevelController>().won = true;
+                            LoadSalon();
                      break;
             }
         }
+            
     }
 
     public void ShowActionLetter(){
+        sign.GetComponent<SpriteRenderer>().enabled = true;
         Debug.Log("Enseñando la letra del objeto");
     }
 
